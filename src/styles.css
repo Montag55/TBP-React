@@ -22,11 +22,26 @@ body {
   padding: 0;
 }
 
-#prev-canvas {
+#prev-canvas,
+#prev-placeholder-text {
   width: 100%;
   height: calc(100% - 42px);
+  max-height: calc(100% - 42px);
+  display: 'flex';
+  background: #d3d3d3;
   margin: 0;
   padding: 0;
+}
+
+#prev-placeholder-text > * {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 190px;
+  font-family: 'Roboto', 'Segoe UI', 'GeezaPro', 'DejaVu Serif', 'sans-serif', '-apple-system', 'BlinkMacSystemFont';
+}
+
+.hidden {
+  display: none;
 }
 
 @font-face {
